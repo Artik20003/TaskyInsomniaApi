@@ -1,0 +1,41 @@
+_id: req_151147e552304640bb335e0bb1b36872
+type: Request
+parentId: fld_c316f1ad83864f528f271acc8db1cc32
+modified: 1666308484627
+created: 1666308484627
+url: "{{ _.BASE_URL }}task"
+name: task
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+      "id": "{% uuid 'v4' %}",
+      "title": "Task title", 
+      "description": "Task description",
+      "time": "{% customTimestamp 'specific', '', '', '', '', '5', '', '', 'millis', '', '' %}", 
+      "remindAt": "{% customTimestamp 'add', '', '', '', '', '10', '', '', 'millis', '', '' %}",
+    	"isDone": false
+    }
+parameters: []
+headers:
+  - id: pair_80da05ad02a342b2af363c5f10c919c1
+    name: x-api-key
+    value: "{{ _.X_API_KEY }}"
+    description: ""
+  - name: Content-Type
+    value: application/json
+    id: pair_f489749a7344414798c5629b976bba8f
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_18f51b54616d4c2aa318a5156bea2ae8',
+    'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+metaSortKey: -1663919384192.1875
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

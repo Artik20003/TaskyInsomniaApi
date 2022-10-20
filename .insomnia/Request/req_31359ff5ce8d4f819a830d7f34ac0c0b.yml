@@ -1,0 +1,30 @@
+_id: req_31359ff5ce8d4f819a830d7f34ac0c0b
+type: Request
+parentId: fld_481cb30972f0478d9a1c0ec73af2d610
+modified: 1666308484625
+created: 1666308484625
+url: "{{ _.BASE_URL }}reminder?reminderId={% response 'body',
+  'req_06ee4d5e4b38419da7040bfeef4f4f83', 'b64::JC5yZW1pbmRlcnNbMF0uaWQ=::46b',
+  'never', 60 %}"
+name: reminder
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers:
+  - id: pair_80da05ad02a342b2af363c5f10c919c1
+    name: x-api-key
+    value: "{{ _.X_API_KEY }}"
+    description: ""
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_18f51b54616d4c2aa318a5156bea2ae8',
+    'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+metaSortKey: -1663919384042.1875
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

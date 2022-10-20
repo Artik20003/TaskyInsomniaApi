@@ -1,0 +1,29 @@
+_id: req_306a247f0b8c41d2b8acf2c32b8543b0
+type: Request
+parentId: fld_320ad519402147a39914ceccc828d3bf
+modified: 1666308484632
+created: 1666308484632
+url: "{{ _.BASE_URL }}agenda?timezone={{ _.TIMEZONE }}&time={% customTimestamp
+  'add', '', '', '', '1', '', '', '', 'millis', '', '' %}"
+name: agenda
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_80da05ad02a342b2af363c5f10c919c1
+    name: x-api-key
+    value: "{{ _.X_API_KEY }}"
+    description: ""
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_18f51b54616d4c2aa318a5156bea2ae8',
+    'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+metaSortKey: -1666291235157.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

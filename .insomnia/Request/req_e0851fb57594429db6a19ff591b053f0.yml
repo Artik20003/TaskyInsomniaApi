@@ -1,0 +1,28 @@
+_id: req_e0851fb57594429db6a19ff591b053f0
+type: Request
+parentId: fld_1d8af02da0e545819d24a6204dd62ab1
+modified: 1666308484621
+created: 1666308484621
+url: "{{ _.BASE_URL }}logout"
+name: logout
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_80da05ad02a342b2af363c5f10c919c1
+    name: x-api-key
+    value: "{{ _.X_API_KEY }}"
+    description: ""
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_18f51b54616d4c2aa318a5156bea2ae8',
+    'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+metaSortKey: -1666195053612.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
