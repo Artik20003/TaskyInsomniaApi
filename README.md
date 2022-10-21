@@ -2,7 +2,7 @@
 
 SHORT FOR THOSE WHO WORKED WITH INSOMNIA BEFORE
 1. Install "insomnia-plugin-customtimestamp" plugin
-2. Import the json file Insomnia*.json from the root
+2. Import the json file InsomniaTasky.json from the root
 3. Update the environment variables: 
 <br>
 <br>
